@@ -1,6 +1,6 @@
 # rollup+babel+XMLHttpRequest打造网络请求库
 
-详细的说明文章[详细文章地址]()
+详细的说明文章[详细文章地址](https://juejin.cn/post/7002794898302697503/)
 
 **rollup.config.js**
 
