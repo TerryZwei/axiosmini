@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>axiosmini()</button>
+    <script src="../dist/bundle.js"></script>
+    <script>
+        let instance = axiosmini.create({
+
+        });
+        // console.log(instance);
+        instance.interceptors.request.use(config => {
+            console.log(config)
+            return config;
+        }, err => {
+            return Promise.reject(err)
+        })
+
+        instance.interceptors.response.use(config => {
+            console.log(config)
+            return config;
+        }, err => {
+            return Promise.reject(err)
+        })
+
+        instance.get('/test1', {params: {a: 1, b: 2}}).then(res => {
+            
+        })
+
+        // console.log(axiosmini)
+        axiosmini({
+            url: '/test',
+            method: 'get',
+        }).then(res => {
+
+        })
+    </script>
+</body>
+
+</html>

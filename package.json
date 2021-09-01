@@ -1,0 +1,26 @@
+{
+  "name": "axiosmini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "rollup -c rollup.config.js --watch",
+    "build": "rollup -c rollup.config.js",
+    "dir": "mddir './2021-07/'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "rollup": "^2.56.2"
+  },
+  "dependencies": {
+    "mddir": "^1.1.1"
+  }
+}
